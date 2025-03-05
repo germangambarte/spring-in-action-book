@@ -31,6 +31,11 @@
     <br/>
     <small class="error-message" th:if="${#fields.hasErrors('deliveryName')}" th:errors="*{deliveryName}"></small> <br/>
 
+    <label for="deliveryStreet">Street</label>
+    <input type="text" id="deliveryStreet" th:field="*{deliveryStreet}"/>
+    <br/>
+    <small class="error-message" th:if="${#fields.hasErrors('deliveryStreet')}" th:errors="*{deliveryStreet}"></small> <br/>
+
     <label for="deliveryCity">City</label>
     <input type="text" id="deliveryCity" th:field="*{deliveryCity}"/>
     <br/>
