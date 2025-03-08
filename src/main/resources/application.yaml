@@ -1,16 +1,8 @@
 spring:
   application:
     name: taco-cloud
-
-  datasource:
-    generate-unique-name: false
-    url: jdbc:mysql://localhost:3306/tacocloud
-    username: root
-    password: secret
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
   thymeleaf:
     cache: false
   data:
-    jdbc:
-      dialect: mysql
+    mongodb:
+      uri: mongodb://localhost:27017/tacoclouddb
